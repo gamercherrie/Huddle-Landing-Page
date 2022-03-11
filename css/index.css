@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(257, 40%, 49%);
+    max-width: 100%;
+    max-height: 100%;
+}
+.container{
+    background-image: url('/Day3/images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content img {
+    width: 300px;
+    margin: 50px 0;
+}
+.content h1{
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    margin: 0 35px;
+}
+.content_logo img{
+    width: 130px;
+    margin: 30px 0 25px 45px;
+}
+.content p{
+    color: #EBEBEB;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    line-height: 25px;
+    margin: 20px 20px;
+}
+.content button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #FFF;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 0 2px 10px hsl(257, 30%, 30%);;
+}
+
+.content button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+}
+
+.content_icons{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 55px 45px 0 0px;
+    color: white;
+}
+.icons-div i{
+    margin-left: 10px;
+    margin-top: 10px
+
+}
+.icons-div{
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+}
+
+@media screen and (min-width: 1024px){
+    html{
+        font-size: 16px;
+    }
+    .container{
+        height: 99vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .content h1{
+        font-size: 2.5rem;
+        text-align: left;
+        margin-right: 200px;
+    }
+    .content p{
+        text-align: left;
+        margin-right: 100px;
+        margin-left: 40px;
+    }
+    .content button{
+        margin-right: 200px;
+        height: 45px;
+        width: 180px;
+        bordeR-radius: 25px;
+        font-size: 1rem;
+    }
+    .content{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15vh;
+    }
+    .content img{
+        width: 600px;
+        margin-left: 50px;
+    }
+    .header_landpage{
+        flex-direction: row;
+        display: flex;
+    }
+    .content_icons{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
